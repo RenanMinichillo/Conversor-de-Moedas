@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DevClub - Convert Money</title>
+</head>
+
+<body>
+
+    <img class="img-logo" src="./img/conversor.png" alt="logo-convert-money">
+
+    <main>
+
+        <label>Converter <b>de</b>
+            <select class="convert-from">
+                <optgroup label="Moedas">
+                    <option value="dolar-us">US$ Dólar americano</option>
+                    <option value="dolar-au">US$ Dólar australiano</option>
+                    <option value="dolar-ca">US$ Dólar canadense</option>
+                    <option value="euro">€ Euro</option>
+                    <option value="franco">₣ Franço Suíço</option>
+                    <option value="iene">¥ Iene</option>
+                    <option value="libra">£ Libra esterlina</option>
+                    <option value="peso">$ Peso argentino</option>
+                    <option value="real">R$ Real</option>
+                    <option value="renminbi">¥ Renminbi chinês</option>
+                </optgroup>
+                <optgroup label="Criptomoedas">
+                    <option value="bitcoin">₿ Bitcoin</option>
+                    <option value="ethereum">ETC Ethereum</option>
+                    <option value="litecoin">Ł Litecoin</option>
+            </select>
+        </label>
+
+        <label>Converter <b>para</b>
+            <select class="convert-to">
+                <optgroup label="Moedas">
+                    <option value="dolar-us">US$ Dólar americano</option>
+                    <option value="dolar-au">US$ Dólar australiano</option>
+                    <option value="dolar-ca">US$ Dólar canadense</option>
+                    <option value="euro">€ Euro</option>
+                    <option value="franco">₣ Franço Suíço</option>
+                    <option value="iene">¥ Iene</option>
+                    <option value="libra">£ Libra esterlina</option>
+                    <option value="peso">$ Peso argentino</option>
+                    <option value="real">R$ Real</option>
+                    <option value="renminbi">¥ Renminbi chinês</option>
+                </optgroup>
+                <optgroup label="Criptomoedas">
+                    <option value="bitcoin">₿ Bitcoin</option>
+                    <option value="ethereum">ETC Ethereum</option>
+                    <option value="litecoin">Ł Litecoin</option>
+                </optgroup>
+            </select>
+        </label>
+
+        <label>Valor
+            <input placeholder="R$ 10.000,00" />
+        </label>
+
+        <button type="button">Converter</button>
+
+        <section>
+            <div class="conversion-box">
+                <img class="img-convert" src="./img/brasil.png" alt="image-convert-from">
+                <p class="text-convert">Real</p>
+                <p class="value-convert">R$ 0.00</p>
+            </div>
+
+            <img class="img-arrow" src="./img/seta.png" alt="image-arrow">
+
+            <div class="conversion-box">
+                <img class="img-converted" src="./img/estados-unidos.png" alt="image-convert-to">
+                <p class="text-converted">Dólar americano</p>
+                <p class="value-converted">US$ 0.00</p>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="./script.js"></script>
+
+</html>
