@@ -2,6 +2,8 @@ const buttonConvert = document.querySelector('button')
 const selectTo = document.querySelector('.convert-to')
 const selectFrom = document.querySelector('.convert-from')
 
+selectFrom.value = 'real'
+
 async function clickButton() {
 
     //  Eventos
@@ -15,6 +17,8 @@ async function clickButton() {
     const ratesUrl = 'BRL-USD,USD-BRL,AUD-BRL,CAD-BRL,EUR-BRL,CHF-BRL,CNY-BRL,JPY-BRL,GBP-BRL,ARS-BRL,BTC-BRL,ETH-BRL,LTC-BRL'
     const rates = `https://economia.awesomeapi.com.br/last/${ratesUrl}`
     const data = await fetch(rates).then(response => response.json())
+
+    console.log(data)
 
     //  Moedas
 
@@ -143,7 +147,7 @@ async function clickButton() {
         valueConverted.innerHTML = new Intl.NumberFormat('en-US', {
             style: 'currency',
             currency: 'USD'
-        }).format(inputValue / dolarUsValue)
+        }).format(total / dolarUsValue)
     }
     
     if (selectTo.value == 'dolar-au') {
