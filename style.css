@@ -11,24 +11,24 @@
 body {
     background-image: url(./img/background.png);
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .img-logo {
     display: block;
     width: 100px;
     margin: 0 auto 10px;
-    filter: drop-shadow( 1px 2px 3px #ffffff);
+    filter: drop-shadow(1px 2px 3px #457B9D);
 }
 
 main {
     width: 320px;
     padding: 10px;
     margin: 10px auto;
-    background-color: #00c8ff;
-    border: 1px solid #0000FF;
+    background-color: #A8DADC;
+    border: 1px solid #1D3557;
     border-radius: 20px;
 }
 
@@ -37,6 +37,7 @@ label {
     margin: 10px;
     font-size: 16px;
     font-weight: 500;
+    color: #1D3557;
 }
 
 .convert-from, .convert-to, input {
@@ -47,7 +48,7 @@ label {
     font-size: 18px;
     font-weight: 600;
     background-color: #FFFFFF;
-    border: 1px solid #0000FF;
+    border: 1px solid #457B9D;
     border-radius: 3px;
     cursor: pointer;
 }
@@ -58,27 +59,25 @@ button {
     height: 40px;
     font-size: 20px;
     font-weight: 600;
-    background-color: #ffc800;
+    background-color: #457B9D;
+    color: #FFFFFF;
     border: none;
     border-radius: 5px;
-    filter: drop-shadow( 1px 2px 3px #000000);
     cursor: pointer;
 }
 
 button:hover {
-    opacity: 0.8;
-    border: 1px solid #0000FF;
+    background-color: #37637e;
+    transition: .3s;
 }
 
 button:active {
-    opacity: 0.6;
-    border: 2px solid #0000FF;
+    background-color: #2d5269;
+    transition: .2s;
 }
 
-
-
 section {
-    border: 1px solid #0000FF;
+    border: 1px solid #1D3557;
     border-radius: 10px;
 }
 
@@ -89,12 +88,26 @@ section {
     padding: 10px;
 }
 
+.conversion-box .text-convert, .conversion-box .text-converted {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.conversion-box .value-convert, .conversion-box .value-converted {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
 .img-arrow {
     display: block;
     margin: 5px auto;
 }
 
 .img-convert, .img-converted {
-    filter: drop-shadow( 2px 3px 3px #000000);
+    filter: drop-shadow(2px 3px 3px #1D3557);
     margin-bottom: 5px;
+}
+
+.text-convert, .text-converted, .value-convert, .value-converted {
+    color: #1D3557;
 }
