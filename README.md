@@ -15,4 +15,4 @@ Este projeto foi desenvolvido com HTML, CSS, JavaScript e consumo de API.
 
 ## Imagem
 
-<img src="https://github.com/RenanMinichillo/schedule/blob/main/DevClub/Front-End/ASSETS/img/Demonstra%C3%A7%C3%A3o.png?raw=true" alt="Imagem de Demonstração" width="1000px">
+<img src="https://github.com/RenanMinichillo/convert-money/blob/main/img/convert-money.png?raw=true" alt="Imagem de Demonstração" width="1000px">
